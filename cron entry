@@ -1,0 +1,5 @@
+crontab -e
+0 * * * * ~/syncthing_borg/backup_script.sh
+
+sudo crontab -e
+30 3 * * * shutdown -r now
