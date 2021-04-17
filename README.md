@@ -13,5 +13,5 @@ portable raspberry pi based server running syncthing and borgbackup
 * create borgbackup repository https://borgbackup.readthedocs.io/en/stable/quickstart.html
 * create backup script (working example in repository)
 * add entry to users crontab by running `crontab -e` and adding the line `0 * * * * ~/syncthing_borg/backup_script.sh` (change path to location of your script). This entry runs the script every hour, thus performing a backup
-* optional: add entry to root crontab to perform automated backups. run `sudo crontab -e` and add `30 3 * * * shutdown -r now`. This reboots daily at 3:30 am.
+* optional: add entry to root crontab to perform automated reboots. run `sudo crontab -e` and add `30 3 * * * shutdown -r now`. This reboots daily at 3:30 am.
 * check if everything works ;D
