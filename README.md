@@ -8,7 +8,7 @@ portable raspberry pi based server running syncthing and borgbackup
 * For enabling power button on pins 5 & 6, modify config.txt in boot partition, comment out `dtparam=i2c_arm=on` and add `dtoverlay=gpio-shutdown`. (File in repository)
 * via apt install syncthing and borgbackup
 * If Pi is headless: Edit syncthing config and change gui address from `127.0.0.1:8384` to `0.0.0.0:8384` to allow access from the network. https://docs.syncthing.net/users/config.html
-* start syncthing service with `sudo systemctl start syncthing@.service`
+* start syncthing service with `sudo systemctl start syncthing@username.service`
 * access gui, set password and configure synchronization
 * create borgbackup repository https://borgbackup.readthedocs.io/en/stable/quickstart.html
 * create backup script (working example in repository)
